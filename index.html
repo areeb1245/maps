@@ -3,7 +3,7 @@
 <head>
     
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <link rel="icon" type="image/x-icon" href="logo.png">
+    
         <script>
             L_NO_TOUCH = false;
             L_DISABLE_3D = false;
@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_e15b95fbdac22039129acc2ef24baff7 {
+                #map_e24ad1dcace2b64317f99c65fd5ec74c {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,24 +35,28 @@
                 .leaflet-container { font-size: 1rem; }
             </style>
         
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
 </head>
 <body>
     
     
-            <div class="folium-map" id="map_e15b95fbdac22039129acc2ef24baff7" ></div>
+            <div class="folium-map" id="map_e24ad1dcace2b64317f99c65fd5ec74c" ></div>
         
 </body>
 <script>
     
     
-            var map_e15b95fbdac22039129acc2ef24baff7 = L.map(
-                "map_e15b95fbdac22039129acc2ef24baff7",
+            var map_e24ad1dcace2b64317f99c65fd5ec74c = L.map(
+                "map_e24ad1dcace2b64317f99c65fd5ec74c",
                 {
-                    center: [24.45388, 54.377342],
+                    center: [25.10255075, 55.1456745],
                     crs: L.CRS.EPSG3857,
-                    zoom: 8,
+                    zoom: 8.5,
                     zoomControl: true,
                     preferCanvas: false,
+                    language: "en",
                 }
             );
 
@@ -60,91 +64,97 @@
 
         
     
-            var tile_layer_090aabc728bb8c4a60c982279077c006 = L.tileLayer(
+            var tile_layer_bc82c54b52fd261f7592e61357366f2b = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_e15b95fbdac22039129acc2ef24baff7);
+            ).addTo(map_e24ad1dcace2b64317f99c65fd5ec74c);
         
     
-            var marker_a6f1d43c01b620ddf8afd8d50816c9ad = L.marker(
+            var marker_cluster_30154ac3c085894e750022ecd2de5a08 = L.markerClusterGroup(
+                {}
+            );
+            map_e24ad1dcace2b64317f99c65fd5ec74c.addLayer(marker_cluster_30154ac3c085894e750022ecd2de5a08);
+        
+    
+            var marker_c8ee935698d44f6270042215a1ba7dec = L.marker(
                 [24.453884, 54.377342],
                 {}
-            ).addTo(map_e15b95fbdac22039129acc2ef24baff7);
+            ).addTo(marker_cluster_30154ac3c085894e750022ecd2de5a08);
         
     
-        var popup_02e8eeb24dd97d7cb1b899b461feb5ca = L.popup({"maxWidth": 150});
+        var popup_2fbf43a3c6ec30c6c12c55a746389424 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_899e7cc19978141e4eef51256ca4441b = $(`<div id="html_899e7cc19978141e4eef51256ca4441b" style="width: 100.0%; height: 100.0%;">     <div>         <h4> 13-05-AC-SDI-023 </h4>          <h5> Workorders: 98</h5>              </div> </div>`)[0];
-                popup_02e8eeb24dd97d7cb1b899b461feb5ca.setContent(html_899e7cc19978141e4eef51256ca4441b);
+                var html_4de3850873b8ff6ea2cc4069904094bb = $(`<div id="html_4de3850873b8ff6ea2cc4069904094bb" style="width: 100.0%; height: 100.0%;">Branch: 13-05-AC-SDI-023<br>Open Workorders: 98</div>`)[0];
+                popup_2fbf43a3c6ec30c6c12c55a746389424.setContent(html_4de3850873b8ff6ea2cc4069904094bb);
             
         
 
-        marker_a6f1d43c01b620ddf8afd8d50816c9ad.bindPopup(popup_02e8eeb24dd97d7cb1b899b461feb5ca)
+        marker_c8ee935698d44f6270042215a1ba7dec.bindPopup(popup_2fbf43a3c6ec30c6c12c55a746389424)
         ;
 
         
     
     
-            var marker_ea706692f18c17be86d356a8451230c5 = L.marker(
+            var marker_6605b9425aad5b2129443ce9aa40ad99 = L.marker(
                 [25.346254, 55.420933],
                 {}
-            ).addTo(map_e15b95fbdac22039129acc2ef24baff7);
+            ).addTo(marker_cluster_30154ac3c085894e750022ecd2de5a08);
         
     
-        var popup_4783de6d802be43a179178667762046c = L.popup({"maxWidth": 150});
+        var popup_9e42768ba24f17a7af54b69d53b538ef = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_02c8e1a1cc34ad8a382aace8adb206f9 = $(`<div id="html_02c8e1a1cc34ad8a382aace8adb206f9" style="width: 100.0%; height: 100.0%;">     <div>         <h4> 57-G0-AC-SU-002 </h4>          <h5> Workorders: 20</h5>              </div> </div>`)[0];
-                popup_4783de6d802be43a179178667762046c.setContent(html_02c8e1a1cc34ad8a382aace8adb206f9);
+                var html_986148893d712499ee87fe2a3ac4223c = $(`<div id="html_986148893d712499ee87fe2a3ac4223c" style="width: 100.0%; height: 100.0%;">Branch: 57-G0-AC-SU-002<br>Open Workorders: 20</div>`)[0];
+                popup_9e42768ba24f17a7af54b69d53b538ef.setContent(html_986148893d712499ee87fe2a3ac4223c);
             
         
 
-        marker_ea706692f18c17be86d356a8451230c5.bindPopup(popup_4783de6d802be43a179178667762046c)
+        marker_6605b9425aad5b2129443ce9aa40ad99.bindPopup(popup_9e42768ba24f17a7af54b69d53b538ef)
         ;
 
         
     
     
-            var marker_030ca92f644a4fc4e58ac5f419fc6f02 = L.marker(
+            var marker_cba91458efe59da0524738e2adc95339 = L.marker(
                 [25.204849, 55.270782],
                 {}
-            ).addTo(map_e15b95fbdac22039129acc2ef24baff7);
+            ).addTo(marker_cluster_30154ac3c085894e750022ecd2de5a08);
         
     
-        var popup_7fe8616ad9360e307ba0cb97ea2e005c = L.popup({"maxWidth": 150});
+        var popup_d4a4e1de95a98ce3c5b640a81bf739e1 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_8f15a7f4a6e3a0aac384c4723dc83121 = $(`<div id="html_8f15a7f4a6e3a0aac384c4723dc83121" style="width: 100.0%; height: 100.0%;">     <div>         <h4> FAB-AAN-AC001 </h4>          <h5> Workorders: 64</h5>              </div> </div>`)[0];
-                popup_7fe8616ad9360e307ba0cb97ea2e005c.setContent(html_8f15a7f4a6e3a0aac384c4723dc83121);
+                var html_5076c9c11863bc62a5b3064fb6a73974 = $(`<div id="html_5076c9c11863bc62a5b3064fb6a73974" style="width: 100.0%; height: 100.0%;">Branch: FAB-AAN-AC001<br>Open Workorders: 64</div>`)[0];
+                popup_d4a4e1de95a98ce3c5b640a81bf739e1.setContent(html_5076c9c11863bc62a5b3064fb6a73974);
             
         
 
-        marker_030ca92f644a4fc4e58ac5f419fc6f02.bindPopup(popup_7fe8616ad9360e307ba0cb97ea2e005c)
+        marker_cba91458efe59da0524738e2adc95339.bindPopup(popup_d4a4e1de95a98ce3c5b640a81bf739e1)
         ;
 
         
     
     
-            var marker_e3c3273c3801d1d1332b99b55f3deec8 = L.marker(
+            var marker_2b0ad5033f327b7fe238c455c33fa297 = L.marker(
                 [25.405216, 55.513641],
                 {}
-            ).addTo(map_e15b95fbdac22039129acc2ef24baff7);
+            ).addTo(marker_cluster_30154ac3c085894e750022ecd2de5a08);
         
     
-        var popup_df4df704ad1b13732cd5f102aff97601 = L.popup({"maxWidth": 150});
+        var popup_4b954cf49c40cb4523309c73d1d6f85c = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_4317b29aa423aa321af3422f42c205a5 = $(`<div id="html_4317b29aa423aa321af3422f42c205a5" style="width: 100.0%; height: 100.0%;">     <div>         <h4> FAB-AAN-AC003 </h4>          <h5> Workorders: 153</h5>              </div> </div>`)[0];
-                popup_df4df704ad1b13732cd5f102aff97601.setContent(html_4317b29aa423aa321af3422f42c205a5);
+                var html_2db15dc0b6095732252671ce1033f32e = $(`<div id="html_2db15dc0b6095732252671ce1033f32e" style="width: 100.0%; height: 100.0%;">Branch: FAB-AAN-AC003<br>Open Workorders: 153</div>`)[0];
+                popup_4b954cf49c40cb4523309c73d1d6f85c.setContent(html_2db15dc0b6095732252671ce1033f32e);
             
         
 
-        marker_e3c3273c3801d1d1332b99b55f3deec8.bindPopup(popup_df4df704ad1b13732cd5f102aff97601)
+        marker_2b0ad5033f327b7fe238c455c33fa297.bindPopup(popup_4b954cf49c40cb4523309c73d1d6f85c)
         ;
 
         
